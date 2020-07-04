@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    height: 400px;
+    background-image: url(bg-img/horror.png);
+    background-repeat: no-repeat;
+}
+
+.slide {
+    position: relative;
+    top: 50px;
+    overflow   : hidden;
+    width: 500px;
+    height: 300px;
+    margin: auto; 
+    background: black;
+    border-radius: 15px;
+}
+
+.slide img {
+    display: block;
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    left: 100%;
+    animation: slideAnimation 18s ease infinite;
+}
+
+.slide img:nth-of-type(1) { animation-delay: 0s }
+.slide img:nth-of-type(2) { animation-delay: 6s }
+.slide img:nth-of-type(3) { animation-delay: 12s }
+ 
+@keyframes slideAnimation {
+    0% { left: 100%  }
+    8% { left: 0     }
+   25% { left: 0     }
+   33% { left: -100% }
+  100% { left: -100% }
+}
+
+.wrapper-bg-img {
+    background-color: black;
+}
+
+.wrapper {
+    display: flex;
+    flex: 1;
+}
+
+.left {
+    width: 300px;
+    height: 1200px;
+    color: white;
+}
+.photo-img {
+    border: 2px solid white;
+    height: 1200px;
+}
+
+.photo-img img {
+    position: relative;
+    left: 50px;
+    top: 150px;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+
+.photo-img p {
+    position: relative;
+    top: 150px;
+    left: 50px;
+}
+
+main {
+    flex: 1;
+}
+
+.img-youtuber {
+    position: relative;
+    left: 130px;
+    top: 30px;
+}
+
+.img-youtuber  img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    
+}
+
+.new-docu {
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 50px;
+}
+
+.new-docu a {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    border-bottom: 1px   solid rgb(163, 16, 16);
+}
+
+.right {
+    width: 300px;
+    height: 1200px;
+    color: white;
+}
+
+.youtube {
+    border: 1px solid white;
+    text-align: center;
+}
+
+.youtube iframe {
+    margin-top: 20px;
+}
+
+footer {
+     height: 200px;
+     color: white;
+     background-color:black;
+     border-top: 1px solid white;
+}
+
+.info-left {
+    color: red;
+}
+
+.info-left p {
+    position: relative;
+    left: 80px;
+}
+
+.info-left textarea {
+    position: relative;
+    left: 20px;
+    border-radius: 10px;
+}
